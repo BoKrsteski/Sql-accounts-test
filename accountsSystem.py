@@ -4,7 +4,7 @@ import sqlite3
 
 debug  = False
 
-conn = sqlite3.connect("example.db")
+conn = sqlite3.connect("accounts.db")
 cursor = conn.cursor()
 cursor.execute("CREATE TABLE IF NOT EXISTS users(username TEXT UNIQUE,password TEXT,storedcontent TEXT)")
 #cursor.execute("INSERT INTO users VALUES(?,?,?)",("abc","password","hi"))
